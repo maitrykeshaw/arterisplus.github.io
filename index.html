@@ -3840,56 +3840,54 @@
     window.CFAppDomain = "app.clickfunnels.com"
     window.domainIsCFInternal = "false" == "true"
   </script>
-  <<<<<<< HEAD=======<script src="assets/lander.js">
-    </script>
-    >>>>>>> parent of 3ae902a (desf)
-    <div id="fb-root"></div>
-    <script async>
-      window.addEventListener('load', function () {
-        (function (d, s, id) {
-          if ($('.fbCommentsPlaceholder').size() > 0) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "../connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        }(document, 'script', 'facebook-jssdk'));
-      });
-    </script>
-    <script>
-      window.cfFacebookInitOptions = {
-        appId: 246441615530259,
-        autoLogAppEvents: false,
-        status: true,
-        xfbml: true,
-        version: "v3.3"
-      };
-      window.fbAsyncInit = function () {
-        FB.init(window.cfFacebookInitOptions);
-
-        // Iterates over all .fb-comments elements on the page, and renders them using the FB SDK.
-        // It only runs if we have not told the FB.init() to render XFBML on page load
-        var renderFacebookComments = function (renderXFBMLAtLoadTime) {
-          // If we have already marked XFBML to render at page load time, do not proceed.
-          if (renderXFBMLAtLoadTime) { return; }
-
-          var comments = document.getElementsByClassName('fb-comments');
-          var i = 0;
-          var len = comments.length;
-          var comment = null;
-          for (; i < len; i++) {
-            comment = comments[i];
-            FB.XFBML.parse(comment.parentElement); // comments need to be rendered/parsed from their parent element.
-          }
+  >>>>>>> parent of 3ae902a (desf)
+  <div id="fb-root"></div>
+  <script async>
+    window.addEventListener('load', function () {
+      (function (d, s, id) {
+        if ($('.fbCommentsPlaceholder').size() > 0) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) { return; }
+          js = d.createElement(s); js.id = id;
+          js.src = "../connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
         }
+      }(document, 'script', 'facebook-jssdk'));
+    });
+  </script>
+  <script>
+    window.cfFacebookInitOptions = {
+      appId: 246441615530259,
+      autoLogAppEvents: false,
+      status: true,
+      xfbml: true,
+      version: "v3.3"
+    };
+    window.fbAsyncInit = function () {
+      FB.init(window.cfFacebookInitOptions);
 
-        renderFacebookComments(true);
-      };
-    </script>
-    <<<<<<< HEAD=======<!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-      <![endif]-->
+      // Iterates over all .fb-comments elements on the page, and renders them using the FB SDK.
+      // It only runs if we have not told the FB.init() to render XFBML on page load
+      var renderFacebookComments = function (renderXFBMLAtLoadTime) {
+        // If we have already marked XFBML to render at page load time, do not proceed.
+        if (renderXFBMLAtLoadTime) { return; }
+
+        var comments = document.getElementsByClassName('fb-comments');
+        var i = 0;
+        var len = comments.length;
+        var comment = null;
+        for (; i < len; i++) {
+          comment = comments[i];
+          FB.XFBML.parse(comment.parentElement); // comments need to be rendered/parsed from their parent element.
+        }
+      }
+
+      renderFacebookComments(true);
+    };
+  </script>
+  <<<<<<< HEAD=======<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
   <form target="_parent" data-cf-form-action="true" action="https://arterisplusget.com/arteris-plus" method="post"
     id="cfAR" style="display:none">
     <span data-cf-form-fields="true"></span>
