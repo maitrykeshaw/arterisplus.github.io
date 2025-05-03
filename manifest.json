@@ -1,12 +1,12 @@
 {
-  "name":"PWA Tutorial",
-  "short_name":"PWA",
+  "name":"Arteris Plus™ Official Website || Save Upto $300 + Free Shipping",
+  "short_name":"Arteris Plus™",
   "start_url":"index.html",
   "display":"standalone",
   "background_color":"#5900b3",
   "theme_color":"#FF5733",
   "scope": ".",
-  "description":"This is a PWA tutorial.",
+  "description":"Arteris Plus is an all-natural supplement that helps achieve better blood circulation and maintain healthy blood pressure levels while boosting energy levels.",
   "icons":[
   {
   "src":"icons/favicon-192x192.png",                     
